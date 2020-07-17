@@ -1,0 +1,43 @@
+#about-sec {
+	background: var(--teal-dark);
+	color: white;
+}
+#about-container {
+	width: 64%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about-txt {
+	font-family: "Montserrat Subrayada", sans-serif;
+	text-transform: uppercase;
+	font-size: 44px;
+	font-weight: 900;
+	margin-right: 52px;
+	text-align: end;
+
+	transform: translateX(300px);
+
+	transition: all ease-out 500ms;
+	position: relative;
+}
+
+#about-txt::after {
+	content: "";
+	position: absolute;
+	height: 140%;
+	width: 4px;
+	top: -20%;
+	right: -20px;
+	background-color: aliceblue;
+}
+
+#about-content {
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	overflow-wrap: break-word;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease-out 250ms 500ms;
+}

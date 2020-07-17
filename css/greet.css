@@ -1,0 +1,36 @@
+#greet-sec {
+	background-color: var(--back-color);
+}
+
+#greet-container {
+	background-color: rgba(0, 0, 0, 0.05);
+	margin: 40px;
+	padding: 40px;
+}
+
+#greet-details {
+	color: rgb(94, 94, 94);
+	font-size: 32px;
+	font-family: "Roboto", sans-serif;
+}
+
+#greet-name {
+	color: black;
+	font-size: 52px;
+	margin-bottom: 24px;
+	font-family: "Questrial", sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+#greet-post {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+	font-family: "Montserrat Subrayada", sans-serif;
+}
+
+#greet-img {
+	height: 85%;
+}
