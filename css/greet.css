@@ -9,7 +9,7 @@
 }
 
 #greet-details {
-	color: rgb(94, 94, 94);
+	color: rgb(100, 100, 100);
 	font-size: 32px;
 	font-family: "Roboto", sans-serif;
 }
@@ -33,4 +33,8 @@
 
 #greet-img {
 	height: 85%;
+	transform: translateX(100px);
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease-out 500ms;
 }

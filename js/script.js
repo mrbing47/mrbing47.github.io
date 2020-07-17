@@ -1,3 +1,10 @@
+const greetImg = document.getElementById("greet-img");
+window.addEventListener("load", () => {
+	greetImg.style.transform = "translateX(0px)";
+	greetImg.style.visibility = "visible";
+	greetImg.style.opacity = "1";
+});
+
 const aboutTxt = document.getElementById("about-txt");
 const aboutContent = document.getElementById("about-content");
 
