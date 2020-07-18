@@ -18,6 +18,8 @@
 	text-align: end;
 
 	transform: translateX(300px);
+	visibility: hidden;
+	opacity: 0;
 
 	transition: all ease-out 500ms;
 	position: relative;
@@ -40,4 +42,5 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: all ease-out 250ms 500ms;
+	line-height: 32px;
 }

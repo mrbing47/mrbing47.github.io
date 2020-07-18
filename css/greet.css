@@ -6,6 +6,7 @@
 	background-color: rgba(0, 0, 0, 0.05);
 	margin: 40px;
 	padding: 40px;
+	position: relative;
 }
 
 #greet-details {
@@ -37,4 +38,44 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: all ease-out 500ms;
+}
+
+#mouse {
+	cursor: pointer;
+
+	bottom: -16vh;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+
+	position: absolute;
+	width: 3px;
+	padding: 8px 15px;
+	height: 40px;
+	border: 2px solid #000;
+	border-radius: 25px;
+	opacity: 0.75;
+	box-sizing: content-box;
+}
+.scroller {
+	height: 10px;
+	border-radius: 25%;
+	background-color: #000;
+	animation-name: scroll;
+	animation-duration: 1.6s;
+	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+	animation-iteration-count: infinite;
+}
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(16px);
+		opacity: 0;
+	}
 }

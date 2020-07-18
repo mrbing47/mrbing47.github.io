@@ -1,0 +1,16 @@
+#skills-sec {
+	flex-direction: column;
+}
+#skills-txt {
+	font-family: "Montserrat Subrayada", sans-serif;
+}
+
+#skills-container {
+	width: 80%;
+}
+
+.skill-card {
+	width: 100%;
+	background-color: red;
+	margin: 20px 0px;
+}
