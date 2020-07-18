@@ -18,7 +18,7 @@
 #greet-name {
 	color: black;
 	font-size: 52px;
-	margin-bottom: 24px;
+	margin: 8px 0px 24px;
 	font-family: "Questrial", sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -63,13 +63,16 @@
 	background-color: #000;
 	animation-name: scroll;
 	animation-duration: 1.6s;
-	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+	animation-timing-function: cubic-bezier(0.38, 1.02, 0.78, 0.99); /*cubic-bezier(0.15, 0.41, 0.69, 0.94);*/
 	animation-iteration-count: infinite;
 }
 @keyframes scroll {
 	0% {
 		transform: translateY(0);
 		opacity: 1;
+	}
+	10% {
+		transform: translate(0);
 	}
 	50% {
 		opacity: 1;
