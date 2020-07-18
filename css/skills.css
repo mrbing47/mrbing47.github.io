@@ -2,19 +2,57 @@
 	height: max-content;
 	flex-direction: column;
 }
-#skills-txt {
-	font-size: 60px;
-	margin: 100px 0px 40px;
-	font-family: "Montserrat Subrayada", sans-serif;
-}
 
 #skills-container {
+	width: 72%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 92px auto 40px;
+}
+
+#skills-txt {
+	text-align: end;
+	font-size: 60px;
+	font-family: "Montserrat Subrayada", sans-serif;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+
+#skills-txt::after {
+	content: "";
+
+	width: 4px;
+	height: 140%;
+	background-color: black;
+	position: absolute;
+
+	left: -10px;
+	margin: auto;
+}
+
+#skill-content {
+	font-size: 24px;
+	margin-right: 32px;
+	color: rgb(100, 100, 100);
+	font-family: "Roboto", sans-serif;
+
+	text-transform: capitalize;
+}
+
+#skills-card-container {
 	width: 80%;
 }
 
 .skill-card {
 	width: 100%;
-	margin: 20px 0px;
+	margin: 28px 0px;
 
 	border: 1px solid rgb(200, 200, 200);
 	border-radius: 8px;
@@ -41,8 +79,6 @@
 	width: 200px;
 	text-align: end;
 	font-family: "Raleway", sans-serif;
-	/* background-color: blueviolet; */
-
 	font-size: 24px;
 
 	position: relative;
@@ -65,8 +101,6 @@
 
 	padding: 28px;
 
-	/* background-color: aqua; */
-
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -86,6 +120,5 @@
 
 .skill-name {
 	font-size: 16px;
-
 	font-family: "Mulish", sans-serif;
 }

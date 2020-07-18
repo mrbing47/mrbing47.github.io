@@ -36,18 +36,13 @@ aboutObserver.observe(aboutTxt);
 
 const skills = document.getElementsByClassName("skill-card");
 
-const skillObserver = new IntersectionObserver(
-	(entries, observer) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add("skill-card-visible");
-			}
-		});
-	},
-	{
-		threshold: 1.0,
-	}
-);
+const skillObserver = new IntersectionObserver((entries, observer) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("skill-card-visible");
+		}
+	});
+});
 
 for (const skill of skills) {
 	skillObserver.observe(skill);
