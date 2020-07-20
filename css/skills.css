@@ -33,7 +33,7 @@
 	background-color: black;
 	position: absolute;
 
-	left: -10px;
+	left: -12px;
 	margin: auto;
 }
 
@@ -48,6 +48,7 @@
 
 #skills-card-container {
 	width: 80%;
+	margin-bottom: 100px;
 }
 
 .skill-card {

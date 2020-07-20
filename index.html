@@ -9,12 +9,15 @@
 		<link rel="stylesheet" href="css/greet.css" />
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/skills.css" />
+		<link rel="stylesheet" href="css/projects.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<script defer src="js/script.js"></script>
 
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Mulish&family=Questrial&family=Monda:wght@700&family=Montserrat+Subrayada:wght@700&family=Roboto&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&family=Mulish&family=Questrial&family=Monda:wght@700&family=Montserrat+Subrayada:wght@700&family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
-		<script defer src="js/script.js"></script>
+		<script defer src="https://kwes.io/js/kwes.js"></script>
 	</head>
 	<body>
 		<section id="greet-sec">
@@ -35,11 +38,7 @@
 					<div class="scroller"></div>
 				</div>
 			</div>
-			<img
-				src="https://raw.githubusercontent.com/mrbing47/Portfolio/master/img/greet.jpg"
-				alt="Sarthik Garg"
-				id="greet-img"
-			/>
+			<img src="img/greet.jpg" alt="Sarthik Garg" id="greet-img" />
 		</section>
 
 		<section id="about-sec">
@@ -174,5 +173,34 @@
 		</section>
 
 		<section id="project-sec"></section>
+
+		<section id="contact-sec">
+			<div id="social-container">
+				<div id="social-txt">Social Media</div>
+				<div id="link-containers">
+					<div id="social-icon"></div>
+				</div>
+			</div>
+
+			<div id="contact-form">
+				<div id="form-txt">Contact Me</div>
+
+				<div class="field-holder">
+					<input type="text" id="name" placeholder="Your Name" required />
+					<label for="name">Your Name</label>
+				</div>
+				<div class="field-holder">
+					<input type="email" id="email" placeholder="Your Email" required />
+					<label for="email">Your Email</label>
+				</div>
+
+				<div class="field-holder">
+					<textarea name="message" id="message" cols="30" rows="4" placeholder="Your Message" required></textarea>
+					<label for="message">Your Message</label>
+				</div>
+
+				<a href="javascript:void(0)" id="submit-form">Submit</a>
+			</div>
+		</section>
 	</body>
 </html>

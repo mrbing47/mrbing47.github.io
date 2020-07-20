@@ -1,0 +1,90 @@
+#contact-sec {
+	background-color: var(--teal-dark);
+	justify-content: space-around;
+}
+
+#contact-form {
+	background-color: white;
+	padding: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+#form-txt {
+	margin: 20px;
+	font-size: 32px;
+	font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.field-holder {
+	position: relative;
+	margin: 40px 0px 12px;
+}
+
+input,
+textarea {
+	align-self: flex-start;
+	width: 300px;
+	padding: 12px 20px 8px 12px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid var(--teal-dark);
+	font-family: "Mulish", sans-serif;
+}
+
+label {
+	position: absolute;
+	left: 4px;
+	top: -20px;
+	font-size: 16px;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+
+	transition: all ease-in-out 200ms;
+}
+
+input::placeholder,
+textarea::placeholder {
+	visibility: hidden;
+}
+
+input:placeholder-shown ~ label,
+textarea:placeholder-shown ~ label {
+	left: 8px;
+	top: 4px;
+	font-size: 20px;
+}
+
+input:focus ~ label,
+textarea:focus ~ label {
+	left: 4px;
+	top: -20px;
+	font-size: 16px;
+}
+
+#submit-form {
+	align-self: flex-end;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	color: var(--teal-dark);
+	padding: 0.75em 1.15em;
+	font-weight: 700;
+	border: 4px solid var(--teal-dark);
+	margin: 12px 24px;
+
+	transition: all ease-in-out 300ms;
+}
+
+#submit-form:hover {
+	color: white;
+	background-color: var(--teal-dark);
+}
+
+/*#email:invalid:required {
+	border-bottom: 2px solid red;
+}*/
