@@ -51,7 +51,6 @@
 	color: black;
 	font-family: "Mulish", sans-serif;
 	font-size: 20px;
-
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -60,7 +59,7 @@
 
 #or {
 	color: white;
-	font-size: 40px;
+	font-size: 48px;
 	font-family: "Montserrat Subrayada", sans-serif;
 }
 

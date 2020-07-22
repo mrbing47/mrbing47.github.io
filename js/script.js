@@ -52,3 +52,21 @@ const skillObserver = new IntersectionObserver(
 for (const skill of skills) {
 	skillObserver.observe(skill);
 }
+
+const projects = document.getElementsByClassName("project-card");
+const projectObserver = new IntersectionObserver(
+	(entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("project-card-visible");
+			}
+		});
+	},
+	{
+		threshold: 0.1,
+	}
+);
+
+for (const project of projects) {
+	projectObserver.observe(project);
+}
