@@ -1,6 +1,67 @@
 #contact-sec {
 	background-color: var(--teal-dark);
-	justify-content: space-around;
+	justify-content: space-evenly;
+}
+
+#social-container {
+	background-color: white;
+	padding: 28px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#social-txt {
+	font-size: 32px;
+	font-family: "Montserrat Subrayada", sans-serif;
+	margin: 20px 0px 28px;
+}
+
+#link-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+
+	border: 1px solid rgb(200, 200, 200);
+	padding: 16px 0px;
+	border-radius: 8px;
+}
+
+.fab,
+.fas {
+	font-size: 24px;
+
+	transition: transform ease-in-out 150ms;
+}
+
+.fas {
+	margin-right: 12px;
+}
+
+.fab:hover,
+.fas:hover {
+	transform: scale(1.25);
+}
+
+#email-id {
+	text-decoration: none;
+	color: black;
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 24px 16px 12px;
+}
+
+#or {
+	color: white;
+	font-size: 40px;
+	font-family: "Montserrat Subrayada", sans-serif;
 }
 
 #contact-form {
@@ -43,8 +104,12 @@ label {
 	font-size: 16px;
 	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
-
+	cursor: text;
 	transition: all ease-in-out 200ms;
+}
+
+#email:invalid {
+	border-bottom: 2px solid red;
 }
 
 input::placeholder,
@@ -66,6 +131,15 @@ textarea:focus ~ label {
 	font-size: 16px;
 }
 
+#form-err {
+	align-self: flex-start;
+	color: red;
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	margin: 8px;
+	visibility: visible;
+}
+
 #submit-form {
 	align-self: flex-end;
 	text-decoration: none;
@@ -76,15 +150,30 @@ textarea:focus ~ label {
 	font-weight: 700;
 	border: 4px solid var(--teal-dark);
 	margin: 12px 24px;
+	box-shadow: inset 0 0 0 0 var(--teal-dark);
 
-	transition: all ease-in-out 300ms;
+	transition: all ease-in-out 240ms;
 }
 
 #submit-form:hover {
 	color: white;
 	background-color: var(--teal-dark);
+	box-shadow: inset 100px 0 0 0 var(--teal-dark);
 }
 
-/*#email:invalid:required {
-	border-bottom: 2px solid red;
-}*/
+.fa-github {
+	color: #24292e;
+}
+.fa-facebook {
+	color: #4267b2;
+}
+.fa-instagram {
+	color: #e1306c;
+}
+
+.fa-linkedin-in {
+	color: #0e76a8;
+}
+.fa-envelope {
+	color: #d44638;
+}
