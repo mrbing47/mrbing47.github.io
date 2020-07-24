@@ -25,7 +25,11 @@ btnSubmitForm.addEventListener("click", (e) => {
 		}
 	}
 
-	/*emailjs
+	ipUserName.value = "";
+	ipUserEmail.value = "";
+	ipUserMessage.value = "";
+
+	emailjs
 		.send("gmail", "template_fVeTzPhc", {
 			user_name: name,
 			user_email: email,
@@ -34,9 +38,14 @@ btnSubmitForm.addEventListener("click", (e) => {
 		.then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
+				formErr.style.color = "green";
+				formErr.style.visibility = "visible";
+				formErr.innerText = "Submitted Successfully.";
 			},
 			function (error) {
 				console.log("FAILED...", error);
+				formErr.style.visibility = "visible";
+				formErr.innerText = "Error submitting, Please try again later.";
 			}
-		);*/
+		);
 });
