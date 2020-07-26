@@ -4,7 +4,24 @@ const ipUserEmail = document.getElementById("email");
 const ipUserMessage = document.getElementById("message");
 const formErr = document.getElementById("form-err");
 
+const loadingCard = document.getElementById("loading-card");
+const successfulCard = document.getElementById("successful-card");
+const failCard = document.getElementById("fail-card");
+
+const btnTryAgain = document.getElementById("try-again");
+const btnAnotherRes = document.getElementById("another-res");
+
 emailjs.init("user_3n6sdiY1yTphzbCRv2hK0");
+
+function toggleCard(showCard, isVisible) {
+	if (isVisible) {
+		showCard.style.visibility = "visible";
+		showCard.style.opacity = "1";
+	} else {
+		showCard.style.visibility = "hidden";
+		showCard.style.opacity = "0";
+	}
+}
 
 btnSubmitForm.addEventListener("click", (e) => {
 	const name = ipUserName.value;
@@ -25,6 +42,8 @@ btnSubmitForm.addEventListener("click", (e) => {
 		}
 	}
 
+	toggleCard(loadingCard, true);
+
 	ipUserName.value = "";
 	ipUserEmail.value = "";
 	ipUserMessage.value = "";
@@ -38,14 +57,21 @@ btnSubmitForm.addEventListener("click", (e) => {
 		.then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
-				formErr.style.color = "green";
-				formErr.style.visibility = "visible";
-				formErr.innerText = "Submitted Successfully.";
+				toggleCard(successfulCard, true);
+				toggleCard(loadingCard, false);
 			},
 			function (error) {
 				console.log("FAILED...", error);
-				formErr.style.visibility = "visible";
-				formErr.innerText = "Error submitting, Please try again later.";
+				toggleCard(failCard, true);
+				toggleCard(loadingCard, false);
 			}
 		);
+});
+
+btnTryAgain.addEventListener("click", () => {
+	toggleCard(failCard, false);
+});
+
+btnAnotherRes.addEventListener("click", () => {
+	toggleCard(successfulCard, false);
 });
