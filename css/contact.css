@@ -266,7 +266,7 @@ textarea:focus ~ label {
 		transform: scale(0);
 	}
 
-	90% {
+	50% {
 		transform: scale(1);
 	}
 }
