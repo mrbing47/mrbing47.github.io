@@ -299,11 +299,26 @@ textarea:focus ~ label {
 		padding: 60px 0px;
 	}
 
+	#social-container {
+		width: 80%;
+		max-width: 368px;
+	}
+
 	#or {
 		margin: 40px 0px;
 	}
 
 	#contact-form {
 		width: 80%;
+		max-width: 356px;
+	}
+
+	.field-holder {
+		width: 92%;
+	}
+
+	input,
+	textarea {
+		width: 100%;
 	}
 }
