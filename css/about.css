@@ -47,11 +47,16 @@
 
 @media only screen and (max-width: 900px) {
 	#about-sec {
-		height: 100vh;
-		padding: 60px !important;
+		min-height: 100vh;
+		max-height: max-content;
+		padding: 60px;
 	}
 
 	#about-container {
-		width: 100% !important;
+		width: 100%;
+	}
+
+	#about-txt {
+		font-size: 32px;
 	}
 }

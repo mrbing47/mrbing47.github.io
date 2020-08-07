@@ -89,12 +89,9 @@
 		padding: 20px 0px 60px;
 	}
 
-	#greet-post {
-	}
-
 	#greet-img {
 		z-index: 0;
-		width: 400px;
+		width: 360px;
 		height: auto;
 	}
 

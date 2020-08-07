@@ -296,10 +296,10 @@ textarea:focus ~ label {
 
 @media only screen and (max-width: 900px) {
 	#contact-sec {
-		padding: 60px 0px !important;
+		padding: 60px 0px;
 	}
 
 	#or {
-		margin: 40px 0px !important;
+		margin: 40px 0px;
 	}
 }
