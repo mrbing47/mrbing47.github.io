@@ -293,3 +293,13 @@ textarea:focus ~ label {
 	color: white;
 	background-color: var(--teal-dark);
 }
+
+@media only screen and (max-width: 900px) {
+	#contact-sec {
+		padding: 60px 0px !important;
+	}
+
+	#or {
+		margin: 40px 0px !important;
+	}
+}

@@ -44,6 +44,7 @@
 	color: rgb(100, 100, 100);
 	font-family: "Roboto", sans-serif;
 	text-transform: capitalize;
+	text-align: end;
 }
 
 #project-container {

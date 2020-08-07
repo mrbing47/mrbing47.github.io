@@ -44,3 +44,14 @@
 	transition: all ease-out 250ms 500ms;
 	line-height: 32px;
 }
+
+@media only screen and (max-width: 900px) {
+	#about-sec {
+		height: 100vh;
+		padding: 60px !important;
+	}
+
+	#about-container {
+		width: 100% !important;
+	}
+}

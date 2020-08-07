@@ -29,6 +29,7 @@
 	color: white;
 	text-transform: uppercase;
 	padding: 0.5em 1em;
+	text-align: center;
 	font-family: "Montserrat Subrayada", sans-serif;
 }
 
@@ -80,5 +81,24 @@
 	100% {
 		transform: translateY(16px);
 		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#greet-sec {
+		padding: 20px 0px 60px;
+	}
+
+	#greet-post {
+	}
+
+	#greet-img {
+		z-index: 0;
+		width: 400px;
+		height: auto;
+	}
+
+	#mouse {
+		visibility: hidden;
 	}
 }
