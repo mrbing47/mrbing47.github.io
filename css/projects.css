@@ -134,7 +134,7 @@
 	transform: scaleX(0);
 	background-color: var(--teal-dark);
 	transform-origin: left;
-	transition: transform ease-out 240ms;
+	transition: transform ease-out 150ms;
 }
 
 .project-duration {
@@ -152,6 +152,22 @@
 	background-color: rgb(200, 200, 200);
 	bottom: -20px;
 	left: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding: 0px 8px;
+	margin: 4px 0px;
+	position: relative;
+}
+
+li::before {
+	content: "-";
+	position: absolute;
+	left: -4px;
 }
 
 @media only screen and (max-width: 900px) {
