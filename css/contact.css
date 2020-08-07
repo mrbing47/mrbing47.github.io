@@ -304,6 +304,10 @@ textarea:focus ~ label {
 		max-width: 368px;
 	}
 
+	#email-id {
+		font-size: 16px;
+	}
+
 	#or {
 		margin: 40px 0px;
 	}
