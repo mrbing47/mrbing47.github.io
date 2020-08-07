@@ -302,4 +302,8 @@ textarea:focus ~ label {
 	#or {
 		margin: 40px 0px;
 	}
+
+	#contact-form {
+		width: 80%;
+	}
 }

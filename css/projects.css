@@ -156,10 +156,10 @@
 
 @media only screen and (max-width: 900px) {
 	#project-head {
-		font-size: 48px;
+		font-size: 44px;
 	}
 
 	#project-head-content {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
