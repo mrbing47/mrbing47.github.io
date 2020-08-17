@@ -1,6 +1,7 @@
 #about-sec {
 	background: var(--teal-dark);
 	color: white;
+	overflow: hidden;
 }
 #about-container {
 	width: 64%;
