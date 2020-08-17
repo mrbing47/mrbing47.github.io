@@ -24,17 +24,86 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&family=Mulish&family=Questrial&family=Monda:wght@700&family=Montserrat+Subrayada:wght@700&family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
+
 		<script
 			defer
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
 		></script>
 		<script defer src="https://kit.fontawesome.com/8d8384e88c.js" crossorigin="anonymous"></script>
-
 		<script defer src="js/intersection.js"></script>
 		<script defer src="js/form.js"></script>
+
+		<style>
+			*,
+			*::after,
+			*::before {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+			}
+
+			#splash-sec {
+				position: fixed;
+				background: var(--teal-dark);
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				transition: all ease-in-out 500ms 1.2s;
+				z-index: 10;
+			}
+
+			.sec-hide {
+				transform: translateY(-100vh);
+			}
+
+			#splash-img {
+				height: 100px;
+				width: 100px;
+				animation: splash 1.2s ease-in-out 0s infinite;
+				transition: all ease-in 300ms;
+			}
+
+			#welcome-txt {
+				transition: all ease-in-out 300ms;
+				margin-top: 40px;
+				font-size: 36px;
+				font-family: "Mulish", sans-serif;
+				color: white;
+				font-weight: 900;
+
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			@keyframes splash {
+				0% {
+					transform: scale(1) rotate(0deg);
+				}
+
+				25% {
+					transform: scale(1.2);
+				}
+
+				50% {
+					transform: scale(1) rotate(0deg);
+				}
+
+				75% {
+					transform: rotate(180deg);
+				}
+			}
+		</style>
 	</head>
 	<body>
+		<section id="splash-sec">
+			<img src="img/favicon/favicon.png" alt="favicon" id="splash-img" />
+			<span id="welcome-txt">Welcome.</span>
+		</section>
+
 		<section id="greet-sec">
 			<div id="greet-container">
 				<div id="greet-details">
@@ -423,5 +492,22 @@
 				</div>
 			</div>
 		</section>
+
+		<script>
+			const img = document.getElementById("splash-img");
+			const sec = document.getElementById("splash-sec");
+			const welcomeTxt = document.getElementById("welcome-txt");
+
+			window.addEventListener("load", (e) => {
+				welcomeTxt.style.visibility = "visible";
+				welcomeTxt.style.opacity = "1";
+				img.addEventListener("animationiteration", () => {
+					img.style.animationIterationCount = "0";
+				});
+
+				window.scrollTo(0, 0);
+				sec.classList.add("sec-hide");
+			});
+		</script>
 	</body>
 </html>

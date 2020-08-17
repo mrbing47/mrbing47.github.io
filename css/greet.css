@@ -35,10 +35,6 @@
 
 #greet-img {
 	height: 85%;
-	transform: translateX(100px);
-	visibility: hidden;
-	opacity: 0;
-	transition: all ease-out 500ms;
 }
 
 #mouse {
