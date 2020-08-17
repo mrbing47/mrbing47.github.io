@@ -1,10 +1,3 @@
-const greetImg = document.getElementById("greet-img");
-window.addEventListener("load", () => {
-	greetImg.style.transform = "translateX(0px)";
-	greetImg.style.visibility = "visible";
-	greetImg.style.opacity = "1";
-});
-
 const mouse = document.getElementById("mouse");
 
 const aboutSec = document.getElementById("about-sec");
