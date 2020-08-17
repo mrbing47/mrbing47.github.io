@@ -59,6 +59,7 @@
 
 	#about-txt {
 		font-size: 32px;
+		transform: translateX(150px);
 	}
 
 	#about-content {
