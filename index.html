@@ -52,7 +52,7 @@
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
-				transition: all ease-in-out 500ms 1.2s;
+				transition: all ease-in-out 500ms 320ms;
 				z-index: 10;
 			}
 
@@ -70,7 +70,7 @@
 			#welcome-txt {
 				transition: all ease-in-out 300ms;
 				margin-top: 40px;
-				font-size: 36px;
+				font-size: 44px;
 				font-family: "Mulish", sans-serif;
 				color: white;
 				font-weight: 900;
@@ -501,12 +501,13 @@
 			window.addEventListener("load", (e) => {
 				welcomeTxt.style.visibility = "visible";
 				welcomeTxt.style.opacity = "1";
-				img.addEventListener("animationiteration", () => {
-					img.style.animationIterationCount = "0";
-				});
 
 				window.scrollTo(0, 0);
-				sec.classList.add("sec-hide");
+
+				img.addEventListener("animationiteration", () => {
+					img.style.animationIterationCount = "0";
+					sec.classList.add("sec-hide");
+				});
 			});
 		</script>
 	</body>
