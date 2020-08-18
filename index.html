@@ -498,10 +498,6 @@
 			const sec = document.getElementById("splash-sec");
 			const welcomeTxt = document.getElementById("welcome-txt");
 
-			window.addEventListener("unload", () => {
-				window.scrollTo(0, 0);
-			});
-
 			window.addEventListener("load", (e) => {
 				welcomeTxt.style.visibility = "visible";
 				welcomeTxt.style.opacity = "1";
@@ -510,6 +506,14 @@
 					img.style.animationIterationCount = "0";
 					sec.classList.add("sec-hide");
 				});
+			});
+
+			window.addEventListener("beforeunload", () => {
+				document.querySelector("html").style.scrollBehavior = "auto";
+			});
+
+			window.addEventListener("unload", () => {
+				window.scrollTo(0, 0);
 			});
 		</script>
 	</body>

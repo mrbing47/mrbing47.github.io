@@ -11,6 +11,10 @@
 	--teal-dark: #00897b;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
