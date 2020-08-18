@@ -1,12 +1,5 @@
-const mouse = document.getElementById("mouse");
-
-const aboutSec = document.getElementById("about-sec");
 const aboutTxt = document.getElementById("about-txt");
 const aboutContent = document.getElementById("about-content");
-
-mouse.addEventListener("click", (event) => {
-	aboutSec.scrollIntoView();
-});
 
 const aboutObserver = new IntersectionObserver(
 	(entries, observer) => {
