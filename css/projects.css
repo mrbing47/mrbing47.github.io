@@ -119,12 +119,7 @@
 	text-decoration: none;
 }
 
-.project-name:hover::after {
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
-.project-name::after {
+.project-name::before {
 	content: "";
 	position: absolute;
 	height: 1px;
@@ -135,6 +130,21 @@
 	background-color: var(--teal-dark);
 	transform-origin: left;
 	transition: transform ease-out 150ms;
+}
+
+.project-name:hover::before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.project-name::after {
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 700;
+	font-size: 12px;
+	content: "\f35d";
+	top: 15px;
+	right: -20px;
 }
 
 .project-duration {
