@@ -83,7 +83,8 @@
 	content: "";
 	position: absolute;
 	height: 100%;
-	border: 1.25px dashed rgb(100, 100, 100);
+	width: 0px;
+	border-left: 2px dashed rgb(100, 100, 100);
 	top: 0px;
 	left: -16px;
 }
