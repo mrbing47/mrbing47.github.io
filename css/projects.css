@@ -49,7 +49,7 @@
 
 #project-container {
 	width: 80%;
-	margin: 24px 0px 140px;
+	margin: 24px 0px 90px;
 }
 
 .project-card {
@@ -179,6 +179,24 @@ li::before {
 	content: "-";
 	position: absolute;
 	left: -4px;
+}
+
+#more-github {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+	padding: 0.6em 0.8em;
+	background-color: #24292e;
+	color: white;
+	border-radius: 4px;
+	margin-bottom: 160px;
+}
+
+#github-icon {
+	color: white;
+	transition: none;
+	transform: none;
+	margin-left: 8px;
 }
 
 @media only screen and (max-width: 900px) {
