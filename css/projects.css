@@ -1,7 +1,7 @@
 #project-sec {
 	background-color: rgb(240, 240, 240);
 	flex-direction: column;
-	height: fit-content;
+	height: max-content;
 }
 
 #project-head-container {
