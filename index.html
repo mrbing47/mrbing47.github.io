@@ -40,7 +40,7 @@
 			#splash-img {
 				height: 100px;
 				width: 100px;
-				animation: splash 1.2s ease-in-out 0s infinite;
+				animation: splash 1s ease-in-out 0s infinite;
 				transition: all ease-in 300ms;
 			}
 
@@ -57,23 +57,7 @@
 			}
 
 			@keyframes splash {
-				/* 0% {
-					transform: scale(1) rotate(0deg);
-				}
-
-				25% {
-					transform: scale(1.2);
-				}
-
-				50% {
-					transform: scale(1) rotate(0deg); 
-				} 
-
-				75% {
-					transform: scale(1) rotate(360deg);
-				} */
-				0%
-				{
+				0% {
 					transform: scale(1);
 				}
 				25% {
@@ -81,10 +65,9 @@
 				}
 
 				50% {
-					transform: scale(1); 
-				} 
-				100%
-				{
+					transform: scale(1);
+				}
+				100% {
 					transform: scale(1) rotate(360deg);
 				}
 			}
@@ -488,11 +471,11 @@
 				<h3 id="form-txt">Contact Me</h3>
 
 				<div class="field-holder">
-					<input type="text" id="name"/>
+					<input type="text" id="name" />
 					<label for="name">Your Name</label>
 				</div>
 				<div class="field-holder">
-					<input type="email" id="email"/>
+					<input type="email" id="email" />
 					<label for="email">Your Email</label>
 				</div>
 
